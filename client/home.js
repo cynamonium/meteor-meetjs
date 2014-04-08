@@ -24,7 +24,12 @@
       var newText = $(".form-control").val();
       if(newText.length>4){
       	$(".form-control").val("");
-      	Doges.insert({text: newText});
+      	Doges.insert({text: newText, createdAt: new Date()});
       }
+    },
+    'keypress .form-control': function (evt, template) {
+    if (evt.which === 13) {
+      $(".btn").trigger("click");
     }
+  }
   };
