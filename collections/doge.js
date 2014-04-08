@@ -1,0 +1,1 @@
+Doges = new Meteor.Collection("doges");

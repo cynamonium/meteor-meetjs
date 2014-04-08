@@ -1,0 +1,41 @@
+body{
+	background: url("doge.jpg") center center #000 no-repeat;
+}
+.row{
+	position: relative;
+}
+.doges{
+	font-size: 20px;
+	color: #FFF;
+	position: absolute;
+	opacity: 0.8;
+    -moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: once;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 1s;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 1s;
+}
+@-moz-keyframes dropHeader {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+html, body, .row{
+	height: 100%;
+}
+
